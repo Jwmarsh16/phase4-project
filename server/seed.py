@@ -10,6 +10,7 @@ from faker import Faker
 from app import app
 from models import db, User, Player, Review, Ranking
 
+
 if __name__ == '__main__':
     fake = Faker()
     with app.app_context():
