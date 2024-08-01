@@ -53,6 +53,7 @@ class Ranking(db.Model):
     @validates('rank')
     def validate_rank(self, key, rank):
         total_players = Player.query.count()
+        rank = int(rank)
         if rank < 1 or rank > total_players:
             raise ValueError(f"Rank must be between 1 and {total_players}")
         return rank
