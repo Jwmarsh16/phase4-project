@@ -8,6 +8,7 @@ from flask_restful import Resource
 
 # Local imports
 from config import app, db, api
+from models import User, Player, Review, Ranking
 # Add your model imports
 
 
